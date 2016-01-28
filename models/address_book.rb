@@ -50,7 +50,7 @@ class AddressBook
       end
     end
 
-    return nil  
+    return nil
   end
 
   def binary_search(name)
@@ -73,5 +73,9 @@ class AddressBook
     end
 
     return nil
+  end
+
+  def demolish_entries
+    @entries = []
   end
 end

@@ -15,7 +15,8 @@ class MenuController
     puts "3 - Search for an entry"
     puts "4 - Import entries from a CSV"
     puts "5 - View Entry number n"
-    puts "6 - Exit"
+    puts "6 - DEMOLISH all entries"
+    puts "7 - Exit"
     print "Enter your selection: "
 
 
@@ -43,6 +44,11 @@ class MenuController
       view_entry_n
       main_menu
     when 6
+      system "clear"
+      @address_book.demolish_entries
+      puts "All entries have been destroyed."
+      main_menu
+    when 7
       puts "Good-bye!"
 
       exit(0)
