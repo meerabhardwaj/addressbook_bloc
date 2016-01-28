@@ -49,7 +49,6 @@ RSpec.describe AddressBook do
 
       book.demolish_entries
       expect(book.entries.size).to eq 0
-
     end
   end
 

@@ -50,7 +50,6 @@ class MenuController
       main_menu
     when 7
       puts "Good-bye!"
-
       exit(0)
 
     else
